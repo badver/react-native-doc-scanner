@@ -1,7 +1,6 @@
-
 {
   "name": "react-native-doc-scanner",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -13,9 +12,7 @@
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "^0.41.2"
-  },
-  "devDependencies": {
+    "react": "*",
     "react-native": "^0.41.2"
   }
 }

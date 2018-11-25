@@ -4,8 +4,9 @@
 #else
 #import <React/RCTBridgeModule.h>
 #endif
+#import <React/RCTViewManager.h>
 
-@interface RNDocScanner : NSObject <RCTBridgeModule>
+@interface RNDocScanner : RCTViewManager <RCTBridgeModule>
 
 @end
   
