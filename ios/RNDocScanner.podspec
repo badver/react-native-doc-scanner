@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   # s.source       = { :git => "https://github.com/author/RNDocScanner.git", :tag => "master" }
   s.source         = { :path => "../node_modules/react-native-doc-scanner/ios" }
-  s.source_files  = "RNDocScanner/**/*.{h,m}"
+  s.source_files  = "*.{h,m}"
   s.requires_arc = true
 
 

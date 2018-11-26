@@ -2,9 +2,11 @@ import React from 'react';
 import { requireNativeComponent, NativeModules } from 'react-native';
 import PropTypes from 'prop-types';
 
-const RNDocScanner = requireNativeComponent('RNDocScanner', RNDocScanner);
+const RNDocScanner = requireNativeComponent('RNDocScanner');
 
-class RNDocScanner extends React.Component {
+console.log('#### RNDocScanner type: ', typeof RNDocScanner)
+
+class DocScanner extends React.Component {
 
   sendOnPictureTakenEvent(event) {
     return this.props.onPictureTaken(event.nativeEvent);
@@ -45,7 +47,7 @@ class RNDocScanner extends React.Component {
 }
 
 
-RNDocScanner.propTypes = {
+DocScanner.propTypes = {
   onPictureTaken: PropTypes.func,
   onRectangleDetect: PropTypes.func,
   overlayColor: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
@@ -59,4 +61,4 @@ RNDocScanner.propTypes = {
   quality: PropTypes.number,
 };
 
-export default RNDocScanner;
+export default DocScanner;

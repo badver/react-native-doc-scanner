@@ -2,17 +2,20 @@
 #import "RNDocScanner.h"
 #import "DocumentScannerView.h"
 
+@interface RNDocScanner()
+@property (strong, nonatomic) DocumentScannerView *scannerView;
+@end
+
 @implementation RNDocScanner
 
-- (dispatch_queue_t)methodQueue
-{
+- (dispatch_queue_t)methodQueue {
     return dispatch_get_main_queue();
 }
-RCT_EXPORT_MODULE()
+
+RCT_EXPORT_MODULE(RNDocScanner)
 
 RCT_EXPORT_VIEW_PROPERTY(onPictureTaken, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(onRectangleDetect, RCTBubblingEventBlock)
-
 
 RCT_EXPORT_VIEW_PROPERTY(overlayColor, UIColor)
 RCT_EXPORT_VIEW_PROPERTY(enableTorch, BOOL)
@@ -28,7 +31,6 @@ RCT_EXPORT_VIEW_PROPERTY(brightness, float)
 RCT_EXPORT_VIEW_PROPERTY(contrast, float)
 
 RCT_EXPORT_METHOD(capture) {
-    
     [_scannerView capture];
 }
 
