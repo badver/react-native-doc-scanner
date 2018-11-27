@@ -12,7 +12,7 @@ Details about iOS and Android implementations and usage at this moment only in t
 
 ## Demo
 
-/ScannerDemo contains a test app I used for testing.
+/ScannerDemo contains a test app I use for testing.
 
 ## Getting started
 
