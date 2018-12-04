@@ -1,6 +1,5 @@
 
 #import "RNDocScanner.h"
-#import "DocumentScannerView.h"
 
 @interface RNDocScanner()
 @property (strong, nonatomic) DocumentScannerView *scannerView;
