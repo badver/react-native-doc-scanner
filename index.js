@@ -1,10 +1,6 @@
-import {Platform} from 'react-native';
-import AndroidDocScanner from './index.android'
-import IosDocScanner from './index.ios'
 
-const DocScanner = Platform.select({
-  ios: () => IosDocScanner,
-  android: () => AndroidDocScanner
-})()
+import { NativeModules } from 'react-native';
 
-export default DocScanner;
+const { RNDocScanner } = NativeModules;
+
+export default RNDocScanner;
