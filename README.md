@@ -1,18 +1,8 @@
 
 # react-native-doc-scanner
+Android only
 
 ## Document detection library
-
-This is a compilation of two libraries:
-###### iOS: https://github.com/Michaelvilleneuve/react-native-document-scanner
-###### Android: https://github.com/jhansireddy/AndroidScannerDemo
-
-I just want to have one library to include in my project. 
-Details about iOS and Android implementations and usage at this moment only in their corresponding repositories.
-
-## Demo
-
-/ScannerDemo contains a test app I use for testing.
 
 ## Getting started
 
@@ -24,17 +14,6 @@ Details about iOS and Android implementations and usage at this moment only in t
 
 ### Manual installation
 
-
-#### iOS
-
-Edit the info.plist file in XCode and add the following permission : NSCameraUsageDescription
-
-Remember, this library uses your device camera, you can't run it on a simulator.
-
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-doc-scanner` and add `RNDocScanner.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNDocScanner.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
 
 #### Android
 
@@ -59,10 +38,7 @@ Remember, this library uses your device camera, you can't run it on a simulator.
 ```javascript
 import RNDocScanner from 'react-native-doc-scanner';
 
-// TODO: What to do with the module?
-RNDocScanner;
-
-// Look at usage in original repositories.
+RNDocScanner.scan().then(uri => ...);
 
 ```
   
